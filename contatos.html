@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="home.css">
-    <title>Conato</title>
+    <title>Contato</title>
 </head>
 <body>
   <header>
- 
     <nav>
       <ul>
         <li><a href="inicio.html">Sobre</a></li>
@@ -19,22 +18,51 @@
       </ul>
     </nav>
   </header>
+  
+    <section id="Kleuvyn">
+      <div class="container">
+        <div class="contato-title">
+          <h1>Entar em Contato</h1>
 
-        <section id="Kleuvyn">
-            <div class="container">
-                 <h1>Contato</h1>
-                    <br>
-                    <img src="imagens/Social-Networks-Linkedin-icon.png" alt="linkedin" class="imagens"> 
-                    <img src="imagens/github-icon.png" alt="github" class="imagens">
-                    <img src="imagens/insta.png" alt="insta" class="imagens">
-                    <img src="imagens/zap.png"alt="whats" class="imagens">
-
-            </div>
-         </section>
-
+          <label for="nomesobrenome">Nome Completo </label>
+          <input type="text" id="nomesobrenome" class="input-padrao" required>
+          <br>
+          <label for="email">Email</label>
+          <input type="email" id="email" class="input-padrao" required placeholder="nome@mail.com">
+          <br>
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" class="input-padrao" required placeholder="(12) 34567-7890">
+          <br>
+          <label for="mensagem">Mensagem</label>
+          <textarea cols="50" rows="5" id="mensagem" class="input-padrao" required></textarea>
+          <br>
+          <fieldset>
+            <input type="submit" value="Enviar" class="enviar">
+          </fieldset>
+          <br><br><br>
+        </div>
+        
+        <h1>Contato</h1>
+        <br>
+        <div class="image-container">
+          <a href="https://www.linkedin.com/in/beatryz-kleuvyn-467a23198/">
+            <img src="imagens/Social-Networks-Linkedin-icon.png" alt="linkedin" class="imagens"> 
+          </a>
+          <a href="https://github.com/kleuvyn">
+            <img src="imagens/github-icon.png" alt="github" class="imagens">
+          </a>
+          <a href="https://www.instagram.com/byyakleuvyn/">
+            <img src="imagens/insta.png" alt="insta" class="imagens">
+          </a>
+          <a href="https://wa.me/5561984660734">
+            <img src="imagens/zap.png" alt="whats" class="imagens">
+          </a>
+        </div>
+      </div>
+    </section>
 
     <footer>
-         <p>&copy; Kleuvyn 2023</p>
+      <p>&copy; Kleuvyn 2023</p>
     </footer>
 </body>
 </html>
