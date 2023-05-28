@@ -3,7 +3,7 @@ body {
   background-image: url("imagens/81310.jpg");
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
-  color: #333;
+  color: #000000;
   line-height: 1.6;
 }
 
@@ -38,7 +38,6 @@ body {
   
 }
 
-
 .image-container img {
     width: 10%;
     height: 10%;
@@ -46,8 +45,6 @@ body {
     max-height: 100px; 
     transition: transform 0.8s ease;
   }
-  
-
 
 .image-container img:hover {
   transform: scale(1.1);
@@ -55,8 +52,8 @@ body {
 
 
 .enviar {
-  background-color: #ac6dbf;
-  color: #fff;
+  background-color: #886592de;
+  color: #bab2c7;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -78,7 +75,7 @@ color: #58bbc2;
 }
 
 header {
-background:#edb3ff33 ;
+background:#cc99da33 ;
 padding: 20px;
 color:  #064680;
 }
@@ -89,7 +86,7 @@ list-style: none;
 
 nav ul li {
 display: inline;
-margin-right: 10px;
+margin-right: 25px;
 }
 
 nav ul li a {
@@ -102,7 +99,7 @@ padding: 40px;
 }
 
 footer {
-background-color: rgba(243, 232, 255, 0.562);
+background-color: rgba(234, 214, 255, 0.822);
 padding: 20px;
 color: #9b00f5;
 text-align: center;
