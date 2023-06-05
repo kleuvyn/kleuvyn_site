@@ -26,17 +26,7 @@ body {
   display: inline-block;
 }
 
-.container {
-  width: 40%;
-  background-color: #eae3fa98;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-left: 25%;
-  margin-right: 25%;
-  
-}
+
 
 .image-container img {
     width: 10%;
