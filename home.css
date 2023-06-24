@@ -19,20 +19,20 @@ body {
 }
 
 .container {
-  text-align: center;
+    display: flex;
+    justify-self: center;
+ 
 }
-
 .container img {
-  display: inline-block;
+    display: inline-block;
 }
-
 
 
 .image-container img {
-    width: 10%;
-    height: 10%;
-    max-width:100px; 
-    max-height: 100px; 
+    margin: 0;
+    padding-inline-end: 100px;
+    max-width:40px; 
+    max-height: 40px; 
     transition: transform 0.8s ease;
   }
 
@@ -61,31 +61,46 @@ color:#ac6dbf;
 }
 
 h2 {
-color: #58bbc2;
+  display: inline;
+  position: relative;
+  color: #58bbc2;
 }
 
 header {
-background:#cc99da33 ;
-padding: 20px;
-color:  #064680;
+  background:#cc99da33 ;
+  padding: 20px;
+  color:  #064680;
 }
 
 nav ul {
-list-style: none;
+  list-style: none;
 }
 
 nav ul li {
-display: inline;
-margin-right: 25px;
+  display: inline;
+  margin-right: 25px;
+
 }
 
 nav ul li a {
-color:  #58bbc2;
-text-decoration: none;
+  color:  #58bbc2;
+  text-decoration: none;
 }
 
 section {
-padding: 40px;
+  padding: 40px;
+}
+
+p{
+  padding: 20px;
+  margin: 20px;
+}
+
+div.relative {
+  position: relative ;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 0px;
 }
 
 footer {
