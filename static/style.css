@@ -457,11 +457,13 @@ footer a{
 
     .div-conteudo {
         padding: 20px;
+        font-size: 12px;
         
     }
     .quem-sou {
         padding: 50px;
         margin: 50px;
+        font-size: 12px;
     }
 
     .div-back,
@@ -475,26 +477,37 @@ footer a{
     .conteudo-quem-sou {
         margin: -60px 0 60px 0;
         padding: 0;
+        font-size: 12px;
     }
 
     .estudando-conteudo {
         margin: 0%;
         text-align: center;
         padding: 5px 10px;
+        font-size: 12px;
     }
 
     .div-conteudo-estudando {
         margin: 0%;
         text-align: center;
         padding: 0;
+        font-size: 12px;
     }
 
-    .p-conhecimentos {
+    .p {
         margin: 0;
         padding: 0;
+        font-size: 12px;
 
     }
+    h1{
+        font-size: 14px;
+    }
 
+    a{
+        font-size: 12px;
+
+    }
     .contato-container {
         padding: 30px;
         margin: 30px;
@@ -504,6 +517,10 @@ footer a{
         margin: 0;
         padding: 4px 30px;
         text-align: center;
+    }
+    .trabalho-letra {
+        margin: 10px;
+
     }
 
 }
