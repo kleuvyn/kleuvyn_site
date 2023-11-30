@@ -135,7 +135,7 @@ h3{
 .conteudo-imagem{
     display: flex;
     justify-content: center;
-    margin: -70px 180px;
+    margin: -65px 180px;
 }
 
 .imagem-conteudo{
@@ -419,7 +419,7 @@ footer a{
     .imagem-conteudo {
         width: 250px;
         height: 250px;
-        margin: 27px;
+        margin: 30px;
     }
     .imagem-cont {
         height: 40px;
