@@ -1,37 +1,46 @@
-// Modal
 function menuShow() {
-    let menuMobile = document.querySelector('.mobile-menu');
-    if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src="https://img.icons8.com/?size=256&id=quuyJoZCkYni&format=png";
-    } else {
-        menuMobile.classList.add('open');
-        document.querySelector('.icon').src="https://img.icons8.com/?size=256&id=K7OXfoF0zHXw&format=pngg";
-    }
+  let menuMobile = document.querySelector('.mobile-menu');
+  if (menuMobile.classList.contains('open')) {
+    menuMobile.classList.remove('open');
+    document.querySelector('.icon').src="https://img.icons8.com/?size=256&id=quuyJoZCkYni&format=png";
+  } else {
+    menuMobile.classList.add('open');
+    document.querySelector('.icon').src="https://img.icons8.com/?size=256&id=K7OXfoF0zHXw&format=pngg";
   }
+}
 
-  const switchModal = () => {
-    const modal = document.querySelector('.modal')
-    const actualStyle = modal.style.display
-    if(actualStyle == 'block') {
-      modal.style.display = 'none'
-    }
-    else {
-      modal.style.display = 'block'
-    }
+const switchModal = () => {
+  const modal = document.querySelector('.modal')
+  const actualStyle = modal.style.display
+  if(actualStyle == 'block') {
+    modal.style.display = 'none'
+  } else {
+    modal.style.display = 'block'
   }
-  
-  const btn = document.querySelector('.modalBtn')
-  btn.addEventListener('click', switchModal)
-  
-  window.onclick = function(event) {
-      const modal = document.querySelector('.modal')
-    if (event.target == modal) {
-      switchModal()
-    }
-  }
+}
 
-// Função para obter os valores do formulário
+const btnConfirmar = document.getElementById('confirmarBtn');
+btnConfirmar.addEventListener('click', function() {
+  const valores = obterValoresFormulario();
+  const corpoEmail = construirCorpoEmail(valores);
+  const assunto = 'Nova mensagem de contato';
+
+  const mailtoLink = `mailto:b.kleuvyn@gmail.com?subject=${encodeURIComponent(
+    assunto
+  )}&body=${encodeURIComponent(corpoEmail)}`;
+
+  window.location.href = mailtoLink;
+
+  switchModal(); 
+});
+
+window.onclick = function(event) {
+  const modal = document.querySelector('.modal')
+  if (event.target == modal) {
+    switchModal();
+  }
+}
+
 function obterValoresFormulario() {
   const nome = document.getElementById('texto').value;
   const telefone = document.getElementById('telefone').value;
@@ -62,18 +71,3 @@ function construirCorpoEmail(valores) {
     Mensagem: ${valores.mensagem}
   `;
 }
-
-function enviarEmail() {
-  const valores = obterValoresFormulario();
-  const corpoEmail = construirCorpoEmail(valores);
-  const assunto = 'Nova mensagem de contato';
-
-  const mailtoLink = `mailto:b.kleuvyn@gmail.com?subject=${encodeURIComponent(
-    assunto
-  )}&body=${encodeURIComponent(corpoEmail)}`;
-
-  window.location.href = mailtoLink;
-}
-
-const btnConfirmar = document.getElementById('confirmarBtn');
-btnConfirmar.addEventListener('click', enviarEmail);
