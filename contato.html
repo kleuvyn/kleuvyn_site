@@ -19,15 +19,14 @@
           <a href="contato.html">Contato</a>
         </div>
       </div>
-        
-       
+
       <div class="mobile-menu-icon">
         <button onclick="menuShow()" class="botao-menu-mobile">
           <img class="icon" src="https://img.icons8.com/?size=256&id=quuyJoZCkYni&format=png" alt="">
           <div class="titulo-menu-mobile">Kleuvyn</div>
         </button>
       </div>
-      
+
     </nav>
     <div class="mobile-menu">
       <div  class="container">
@@ -46,7 +45,7 @@
           </div>
         </div>
       </div>
-  
+
       <div class="mobile-menu-icon">
         <button onclick="menuShow()" class="botao-menu-mobile">
           <img class="icon" src="https://img.icons8.com/?size=256&id=quuyJoZCkYni&format=png" alt="">
@@ -55,7 +54,7 @@
           </div>
         </button>
       </div>
-  
+
     </div>
   </header>
   <div class="contato-container">
@@ -69,7 +68,7 @@
     <form class="contato-form">
         <label for="texto">Nome: </label>
         <input type="text" name="nome" id="texto" placeholder="Informe o seu nome...">
-    
+
         <label for="telefone">Telefone: </label>
         <input type="text" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx">
 
@@ -79,19 +78,19 @@
         <label for="hora">Horário para entrar em contato: </label>
         <input type="time" name="hora" id="hora">
 
-        <label for="primeiro contato">Primeiro Contato: </label>
+        <label for="primeiro-contato">Primeiro Contato: </label>
         <div>
           <label for="sim">Sim: </label>
-          <input type="radio" name="sim" id="sim">
+          <input type="radio" name="primeiro-contato" id="sim">
           <label for="nao">Não: </label>
-          <input type="radio" name="nao" id="nao">
+          <input type="radio" name="primeiro-contato" id="nao">
         </div>
 
         <label for="mensagem">Mensagem</label>
         <br>
         <textarea name="mensagem" id="mensagem" cols="50" rows="10"></textarea>
 
-        <button type="button" name="confirmar" id="confirmar" onclick="switchModal()">Confirmar</button>
+        <button type="button" name="confirmar" id="confirmarBtn" onclick="enviarEmail()">Confirmar</button>
     </form>
     </div>
       </div>
@@ -99,9 +98,9 @@
           <div class="content">
             <p id="texto-modal" class="paragrafo-modal"></p>
             <br>
-            <h4>Recebi sua mensagem. Agradeço pelo contato! Assim que possível, entrarei em contato. 
+            <h4>Recebi sua mensagem. Agradeço pelo contato! Assim que possível, entrarei em contato.
             <br>
-              Caso haja alguma urgência, por favor, sinta-se à vontade para me informar. 
+              Caso haja alguma urgência, por favor, sinta-se à vontade para me informar.
             <br><br>
             Obrigado pela compreensão!
             </h4>
@@ -134,13 +133,7 @@
       <p>
         &copy; 2023 Kleuvyn
       </p>
-  
-    </footer>
-  
-  </section>
 
-</div>
-<script src="static/style.css"></script>
-</body>
-</html>
- 
+    </footer>
+
+  </section>

@@ -1,3 +1,4 @@
+// Modal
 function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');
     if (menuMobile.classList.contains('open')) {
@@ -30,4 +31,49 @@ function menuShow() {
     }
   }
 
+// Função para obter os valores do formulário
+function obterValoresFormulario() {
+  const nome = document.getElementById('texto').value;
+  const telefone = document.getElementById('telefone').value;
+  const email = document.getElementById('email').value;
+  const hora = document.getElementById('hora').value;
+  const primeiroContatoSim = document.getElementById('sim').checked;
+  const primeiroContatoNao = document.getElementById('nao').checked;
+  const mensagem = document.getElementById('mensagem').value;
 
+  return {
+    nome,
+    telefone,
+    email,
+    hora,
+    primeiroContatoSim,
+    primeiroContatoNao,
+    mensagem,
+  };
+}
+
+function construirCorpoEmail(valores) {
+  return `
+    Nome: ${valores.nome}
+    Telefone: ${valores.telefone}
+    E-mail: ${valores.email}
+    Horário para entrar em contato: ${valores.hora}
+    Primeiro Contato: ${valores.primeiroContatoSim ? 'Sim' : 'Não'}
+    Mensagem: ${valores.mensagem}
+  `;
+}
+
+function enviarEmail() {
+  const valores = obterValoresFormulario();
+  const corpoEmail = construirCorpoEmail(valores);
+  const assunto = 'Nova mensagem de contato';
+
+  const mailtoLink = `mailto:b.kleuvyn@gmail.com?subject=${encodeURIComponent(
+    assunto
+  )}&body=${encodeURIComponent(corpoEmail)}`;
+
+  window.location.href = mailtoLink;
+}
+
+const btnConfirmar = document.getElementById('confirmarBtn');
+btnConfirmar.addEventListener('click', enviarEmail);
