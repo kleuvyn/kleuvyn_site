@@ -1,0 +1,499 @@
+body{
+    margin: 0;
+    padding: 80px 250px;
+    text-align: center;
+  }
+
+
+img{
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+}
+
+.img-avatar{
+    width: 200px;
+    height: 200px;
+    margin: 80px;
+}
+.imagem-logo{
+    margin: 40px;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+}
+.nav-barra{
+    box-shadow: none;
+    z-index: auto;
+}
+
+.container{
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+}
+.nav-lista{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-shrink: 0;
+    margin: 0;
+    padding-right: 60px;
+    background-color:#f6f3ff ;
+    box-shadow: 0 0 10px #6b3cee;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+a.nav-barra, .nav-link {
+    cursor: pointer;
+}
+
+
+a {
+    color: #2e0067;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 0;
+}
+
+
+.menu{
+    margin-right: 10px;
+    box-shadow: none;
+    padding: 1px 0;
+    text-align: center;
+}
+
+
+section{
+    display: flex;
+    margin: 0px;
+}
+
+.conteudo{
+    display: flex;
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+}
+
+.titulo{
+    display: flex;
+    margin: 80px;
+    width: 100%;
+    padding: 10px;
+    position:center;
+    position: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    position:center;
+    color: #7d4efd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    justify-content: center; 
+}
+
+h2{
+    display: flex;
+    width: 100%;
+    position:center;
+    color: #220081;
+    position: center;
+    justify-content: center;
+    font-size: 16px;
+
+}
+h3{
+    display: flex;
+    width: 100%;
+    position:center;
+    color: #7d4efd;
+    position: center;
+    justify-content: center;
+}
+
+.conteudo-imagem{
+    display: flex;
+    justify-content: center;
+    margin: -70px 180px;
+}
+
+.imagem-conteudo{
+    width: 500px;
+    height: 500px;
+    margin: 0;
+    position:center;
+}
+
+.div-conteudo{
+    margin: 0;
+    padding: 80px 250px;
+    background-color: #7d4efdc7;
+    text-align: center;
+ 
+}
+
+.div-conteudo h1,h4,p {
+    margin: 0px;
+    color: #fff;
+    font-size: 15px;
+    font-family: "europa", sans-serif;
+    line-height: 1.5;
+}
+
+.sec-conteudo{
+    display: flex;
+    margin: 0px;
+    color: #fff;
+
+}
+.conteudo-quem-sou{
+    display: flex;
+    margin: -60px 180px 60px 180px;
+    font-family: "europa", sans-serif;
+    line-height: 1.5;
+ 
+    
+}
+.quem-sou{
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px 0 10px 0;
+    border-bottom: 0px solid #7d4efd4c;
+    border: 1px solid #7d4efd49;
+    padding: 60px 55px;
+    font-family: "europa", sans-serif;
+    line-height: 1.5;
+}
+
+.div-back{
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px 0 0 10px;
+    border-bottom: 0px solid #7d4efd4c;
+    border: 1px solid #7d4efd49;
+    padding: 60px 35px;
+
+}
+
+.div-python{
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 0 0;
+    border-bottom: 0px solid #7d4efd4c;
+    border: 1px solid #7d4efd49;
+    padding: 60px 35px;
+ 
+}
+
+
+.div-pdv{
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 0  10px 10px 0;
+    border-bottom: 0px solid #7d4efd4c;
+    border: 1px solid #7d4efd49;
+    padding: 60px 35px;
+}
+
+
+.imagem-cont{
+    height: 80px;
+    width: 80px;
+}
+.estudando-conteudo{
+    margin: 0%;
+    padding: 50px 180px;
+    text-align: center;
+
+}
+
+.div-conteudo-estudando{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+}
+
+.img-estudando{
+    width: 80px;
+    height: 80px;
+
+}
+.conhecimentos{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+
+}
+
+.linha-imgs {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.p-conhecimentos{
+    margin: 30px;
+    padding: 20px;
+    color: #000000;
+    font-size: 15px;
+    font-family: "europa", sans-serif;
+    line-height: 1.5;
+}
+
+.div-certificacoes{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: #7d4efd0f;;
+    text-align: center;
+    font-size: 15px;
+    font-family: "europa", sans-serif;
+    line-height: 2.0;
+}
+
+.div-certificacoes h2 h3 p a {
+    margin: 60px;
+    color: #000000;
+    font-size: 15px;
+    font-family: "europa", sans-serif;
+    line-height: 1.5;
+}
+.trabalho{
+    display: flex;
+    color: #000;
+    margin: 0px;
+    font-size: 15px;
+    font-family: "europa", sans-serif;
+    line-height: 1.5;
+}
+.trabalho-letra {
+    margin: 25px;
+    color: #000000;
+    font-size: 24px;
+    font-family: "europa", sans-serif;
+    line-height: 1.5;
+}
+.trabalho-conteudo {
+    margin: 0;
+    padding: 80px 250px;
+    text-align: center;
+}
+.img-trabalho{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+    margin: 40px 0;
+    padding: 0 100px;
+    display: flex;
+ 
+}
+
+.contato-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 60px;
+    border: 1px solid #7d4efd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #7d4efd12;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contato-form input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contato-form button:hover {
+    background-color:#7161c0;
+    
+}
+
+button {
+    padding: 10px;
+    background-color:#7161c0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    background-color: #7d4efdc7;
+    text-align: center;
+    color: #000;
+    font-size: 22px;
+    font-family: "europa", sans-serif;
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+.footer-conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: #7d4efdc7;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.imagens-footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.img-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+footer a{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+}
+
+.img-avatar {
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+}
+
+.imagem-logo {
+    margin: 40px;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+
+@media screen and (max-width: 900px) {
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .img-avatar {
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+    }
+
+    .imagem-logo {
+        margin: 20px;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-lista {
+        padding-right: 20px;
+    }
+
+    .conteudo {
+        margin: 0 20px;
+    }
+
+    .titulo {
+        margin: 40px;
+    }
+
+    .conteudo-imagem {
+        margin: -50px 20px;
+    }
+
+    .imagem-conteudo {
+        width: 100%;
+        height: auto;
+    }
+
+    .div-conteudo {
+        padding: 40px 20px;
+    }
+
+    .conteudo-quem-sou {
+        margin: -20px 20px 20px 20px;
+    }
+
+    .div-conteudo-estudando {
+        padding: 20px;
+    }
+
+    .contato-container {
+        padding: 30px;
+    }
+    .conteudo-estudando {
+        margin: 0;
+    }
+
+    .div-conteudo-estudando {
+        padding: 40px 10px;
+    }
+
+    .trabalho-conteudo {
+        padding: 40px 10px;
+    }
+
+    .div-certificacoes {
+        padding: 40px 10px;
+    }
+
+    .footer-conteudo {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+}

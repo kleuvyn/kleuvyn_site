@@ -2,91 +2,145 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
     <title>Contato</title>
 </head>
 <body>
-   <header>
-      <nav>
-         <a href="index.html">
-            <img src="https://img.icons8.com/?size=256&id=108648&format=png" alt="Logo" width="70px">
+  <header>
+    <nav class="nav-barra">
+      <div  class="container">
+        <div class="nav-lista">
+          <a href="index.html" >
+            <img class="imagem-logo nav-item imagem-logo" src="imagens/logo.png" alt="Logo">
           </a>
 
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
+          <a href="contato.html">Contato</a>
+        </div>
+      </div>
+        
+       
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()" class="botao-menu-mobile">
+          <img class="icon" src="https://img.icons8.com/?size=256&id=quuyJoZCkYni&format=png" alt="">
+          <div class="titulo-menu-mobile">Kleuvyn</div>
+        </button>
+      </div>
+      
+    </nav>
+    <div class="mobile-menu">
+      <div  class="container">
+        <div class="nav-lista">
+          <a href="index.html" >
+            <img class="imagem-logo nav-item imagem-logo" src="imagens/logo.png" alt="Logo">
+          </a>
 
-          </li>
+          <div class="menu">
+            <div class="nav-barra-start">
+            </div>
 
-          <li>
-            <a href="certificacao.html">Certificações</a>
-          </li>
+            <div>
+              <a href="contato.html"class="nav-barra-end">Contato</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()" class="botao-menu-mobile">
+          <img class="icon" src="https://img.icons8.com/?size=256&id=quuyJoZCkYni&format=png" alt="">
+          <div class="titulo-menu-mobile">
+            Kleuvyn
+          </div>
+        </button>
+      </div>
+  
+    </div>
+  </header>
+  <div class="contato-container">
+    <div>
+      <h2>Contato:</h2>
+      <ul>
+        <li>📞 Telefone: (61) 98466-0734</li>
+        <li>✉️ E-mail: <a href="mailto:b.kleuvyn@gmail.com">b.kleuvyn@gmail.com</a></li>
+      </ul>
+    </div>
+    <form class="contato-form">
+        <label for="texto">Nome: </label>
+        <input type="text" name="nome" id="texto" placeholder="Informe o seu nome...">
+    
+        <label for="telefone">Telefone: </label>
+        <input type="text" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx">
 
-          <li>
-            <a href="portfolio.html">Portfólio</a>
-          </li>
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email" placeholder="usuario@gmail.com">
 
-          <li>
-            <a href="contato.html">Contato</a>
-          </li>
+        <label for="hora">Horário para entrar em contato: </label>
+        <input type="time" name="hora" id="hora">
 
-        </ul>
-      </nav>
-    </header>
-    <main>
+        <label for="primeiro contato">Primeiro Contato: </label>
+        <div>
+          <label for="sim">Sim: </label>
+          <input type="radio" name="sim" id="sim">
+          <label for="nao">Não: </label>
+          <input type="radio" name="nao" id="nao">
+        </div>
 
-        <h1>
-            Contato
-        </h1>
-        <hr>
+        <label for="mensagem">Mensagem</label>
         <br>
+        <textarea name="mensagem" id="mensagem" cols="50" rows="10"></textarea>
 
-
-        <form>
-         <div>
-            <label for="texto">Nome: </label>
-            <input type="text" name="nome" id="texto" placeholder="Informe o seu nome...">
-         </div>
-
-         <div>
-            <label for="telefone">Telefone: </label>
-            <input type="text" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx">
-         </div>
-
-         <div>
-            <label for="email">E-mail: </label>
-            <input type="email" name="email" id="email" placeholder="usuario@gmail.com">
-         </div>
-
-         <div>
-            <label for="data">Data de Nascimento: </label>
-            <input type="date" name="data" id="data_nascimento">
-         </div>
-
-         <div>
-            <label for="hora">Horário: </label>
-            <input type="time" name="hora" id="hora">
-         </div>
-
-         <div>
-            <label for="primeiro contato">Primeiro contato: </label>
-            <label for="sim">Sim: </label>
-            <input type="checkbox" name="sim" id="sim">
-            <label for="nao">Não: </label>
-            <input type="radio" name="nao" id="nao">
-         </div>
-
-         <div>
-            <label for="mensagem">Mensagem</label>
+        <button type="button" name="confirmar" id="confirmar" onclick="switchModal()">Confirmar</button>
+    </form>
+    </div>
+      </div>
+        <div class="modal">
+          <div class="content">
+            <p id="texto-modal" class="paragrafo-modal"></p>
             <br>
-            <textarea name="mensagem" id="mensagem" cols="50" rows="10"></textarea>
-         </div>
-         <div>
-            <input type="submit" name="confirmar" id="confirmar" value="Confirmar ">
-            <input type="reset" name="limpar" id="limpar" value="Limpar">
-         </div>
+            <h4>Recebi sua mensagem. Agradeço pelo contato! Assim que possível, entrarei em contato. 
+            <br>
+              Caso haja alguma urgência, por favor, sinta-se à vontade para me informar. 
+            <br><br>
+            Obrigado pela compreensão!
+            </h4>
+          </div>
+      </div>
+    </div>
+  </div>
 
-    </main>
+  <section class="footer">
+    <footer class="footer-conteudo">
 
+      <p>
+        <a href="index.html" >
+          <img class="img-footer" src="imagens/logo.png" alt="Logo">
+        </a>
+        Em um mundo de bits e códigos, programo meu caminho rumo ao futuro, onde cada linha de código é um passo em direção à inovação e ao progresso.
+      </p>
+
+      <div class="imagens-footer">
+        <a class="img-footer" href="https://github.com/kleuvyn"><img  class="img-footer" src="https://img.icons8.com/?size=256&id=12599&format=png" alt="GitHub Kleuvn">
+        </a>
+
+        <a class="img-footer"  href="https://www.linkedin.com/in/beatryz-kleuvyn-467a23198/"><img  class="img-footer" src="https://img.icons8.com/?size=256&id=98960&format=png" alt="Linkedin Kleuvn">
+        </a>
+
+        <a class="img-footer" href="mailto:b.kleuvyn@gmail.com"><img  class="img-footer" src="https://img.icons8.com/?size=256&id=60688&format=png" alt="E-mail Kle">
+        </a>
+      </div>
+
+      <p>
+        &copy; 2023 Kleuvyn
+      </p>
+  
+    </footer>
+  
+  </section>
+
+</div>
+<script src="static/style.css"></script>
 </body>
 </html>
+ 
