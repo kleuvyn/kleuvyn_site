@@ -47,7 +47,7 @@ img {
     margin: 0;
     padding-right: 100px;
     background-color:#f6f3ff ;
-    box-shadow: 0 0 10px #6b3cee;
+    /* box-shadow: 0 0 10px #6b3cee; */
     font-weight: bolder;
 }
 
