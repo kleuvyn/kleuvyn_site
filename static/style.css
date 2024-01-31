@@ -6,7 +6,6 @@ body {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    line-height: 2.0;
 }
 
 img {
@@ -16,9 +15,9 @@ img {
 }
 
 .img-avatar {
-    width: 150px;
-    height: 150px;
-    margin: 40px;
+    width: 200px;
+    height: 200px;
+    margin: 0px;
 }
 
 .imagem-logo {
@@ -29,26 +28,29 @@ img {
 }
 
 .nav-barra{
+    display: flex;
+    width: 100%;
+    position:relative;
     box-shadow: none;
     z-index: auto;
+    
 }
 
 .container{
   flex-grow: 1;
-  margin: 0 auto;
-  position: relative;
-  width: auto;
+  margin:  auto;
+  position: fixed;
+  width: 100%;
 }
 .nav-lista{
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    display: flex;
-    flex-shrink: 0;
-    margin: 0;
-    padding-right: 100px;
+    padding-right: 50px;
     background-color:#f6f3ff ;
     box-shadow: 0 0 10px #6b3cee;
     font-weight: bolder;
+    font-size: 20px;
 }
 
 .nav-item{
@@ -69,16 +71,40 @@ a {
     font-weight: 0;
 }
 
+.menu_logo{
+    display: flex;
+    gap: 50px;
+}
+
+.menu_logo ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transition: display 0.3s ease;
+}
+
+.menu_logo li {
+    margin: 0px;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.menu_logo a {
+    text-decoration: none;
+    color: rgb(81, 0, 173);
+}
+
+.menu-fechado {
+    display: none;
+}
+
 
 .menu{
     margin-right: 10px;
     box-shadow: none;
     padding: 1px 0;
     text-align: center;
-}
-
-.menui{
-    text-decoration: none;
 }
 
 section{
@@ -95,11 +121,9 @@ section{
 
 .titulo{
     display: flex;
-    margin: 80px;
+    margin: 230px auto;
     width: 100%;
-    padding: 10px;
     position:center;
-    position: center;
     flex-direction: column;
     align-items: center;
 }
@@ -112,7 +136,8 @@ h1{
     color: #7d4efd;
     font-family: Verdana, Geneva, Tahoma, sans-serif;   
     justify-content: center; 
-    font-weight: 500;
+    font-weight: 900;
+    font-size: 26px;
 }
 
 h2{
@@ -122,7 +147,7 @@ h2{
     color: #220081;
     position: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -133,92 +158,126 @@ h3{
     color: #7d4efd;
     position: center;
     justify-content: center;
+    font-size: 18px;
+}
+h5{
+    display: flex;
+    width: 100%;
+    position:center;
+    color: #ffffff;
+    position: center;
+    justify-content: center;
+    font-size: 16px;
 }
 
 .conteudo-imagem{
     display: flex;
     justify-content: center;
-    margin: -65px 180px;
-}
-
-.imagem-conteudo{
-    width: 500px;
-    height: 500px;
-    margin: 0;
-    position:center;
+    margin: 0px;
 }
 
 .div-conteudo{
-    margin: 0;
-    padding: 80px 250px;
+    width: 100%;
+    margin:70px 0 0 0 ;
+    padding: 130px;
     background-color: #7d4efdc7;
     text-align: center;
+    line-height: 1.0;
  
 }
 
 .div-conteudo h1,h4,p {
+    padding: 0px;
     margin: 0px;
     color: #fff;
-    font-size: 15px;
+    font-size: 18px;  
     font-family: "europa", sans-serif;
-    line-height: 1.5;
+    line-height: 2.0;
 }
 
 .sec-conteudo{
     display: flex;
     margin: 0px;
-    color: #fff;
+    color: #e1dbfd;
 
 }
 .conteudo-quem-sou{
     display: flex;
-    margin: -60px 180px 60px 180px;
+    align-items: center;
+    justify-content: center;
+    margin: -60px 80px 50px;
+    width: auto;
     font-family: "europa", sans-serif;
-    line-height: 1.5;
+}
  
+.desenvolvimento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 150px;
+    padding: 150px;
+    background-color:#7d4efd
+}
     
-}.quem-sou {
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid #7d4efd49;
-    padding: 30px;
-    font-family: "europa", sans-serif;
-    line-height: 1.5;
+.quem-sou {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    flex-direction: column;
+    justify-content: center;
+    position: center;
+
+}
+.color-desenvolvimento{
+    color: #25008a;
+    font-size: 16px;
 }
 
+
 .div-back {
-    text-align: center;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
     background-color: #ffffff;
     border-radius: 10px 0 0 10px;
-    border: 1px solid #7d4efd49;
-    padding: 30px;
+    border: 1px solid #7d4efd;
+    padding: 20px;
 }
 
 .div-python {
     text-align: center;
     background-color: #ffffff;
     border-radius: 0;
-    border: 1px solid #7d4efd49;
-    padding: 30px;
+    border: 1px solid #7d4efd;
+    padding: 20px;
 }
 
 .div-pdv {
     text-align: center;
     background-color: #ffffff;
     border-radius: 0 10px 10px 0;
-    border: 1px solid #7d4efd49;
-    padding: 30px;
+    border: 1px solid #7d4efd;
+    padding: 20px;
 }
 
 
 .imagem-cont{
     height: 80px;
     width: 80px;
+    padding: 160px 120px 25px 150px;
+
 }
+
+.imagem-conteudo{
+    width: 400px;
+    height: 400px;
+    padding: 125px 0 0 0;
+}
+
 .estudando-conteudo{
     margin: 0%;
-    padding: 50px 180px;
     text-align: center;
 
 }
@@ -231,8 +290,10 @@ h3{
 }
 
 .img-estudando{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
+    margin: 15px;
+    padding: 20px;
 
 }
 .conhecimentos{
@@ -245,28 +306,31 @@ h3{
 
 .linha-imgs {
     display: flex;
-    justify-content: space-between;
-    margin: 20px;
+    justify-content: center;
+    margin: 0 20px;
+
 }
 
 .p-conhecimentos{
     margin: 30px;
     padding: 20px;
     color: #000000;
-    font-size: 15px;
+    font-size: 18px;
     font-family: "europa", sans-serif;
     line-height: 1.5;
 }
 
 .div-certificacoes{
     display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 220px 0;
     justify-content: center;
-    margin: 0;
     background-color: #4400ff23;;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     font-family: "europa", sans-serif;
-    line-height: 2.0;
+    line-height: 2.8;
 }
 
 .div-certificacoes h2 h3 p a {
@@ -274,15 +338,15 @@ h3{
     color: #000000;
     font-size: 15px;
     font-family: "europa", sans-serif;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 .trabalho{
     display: flex;
     color: #000;
     margin: 0px;
-    font-size: 15px;
+    font-size: 18px;
     font-family: "europa", sans-serif;
-    line-height: 1.5;
+    line-height: 2.0;
 }
 .trabalho-letra {
     margin: 25px;
@@ -293,7 +357,7 @@ h3{
 }
 .trabalho-conteudo {
     margin: 0;
-    padding: 80px 250px;
+    padding: 200px 250px;
     text-align: center;
 }
 .img-trabalho{
@@ -301,7 +365,7 @@ h3{
     justify-content: center;
     width: 600px;
     height: 400px;
-    margin: 40px 0;
+    margin: 100px 0;
     padding: 0 100px;
     display: flex;
  
@@ -309,7 +373,7 @@ h3{
 
 .contato-container {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 100px auto;
     padding: 60px;
     border: 1px solid #7d4efd;
     border-radius: 5px;
@@ -360,7 +424,7 @@ footer{
     justify-content: center;
     width: 100%;
     margin: 0;
-    background-color: #7d4efdc7;
+    background-color: #1b0064c7;
     text-align: center;
     color: #000;
     font-size: 22px;
@@ -374,7 +438,7 @@ footer{
     display: flex;
     justify-content: center;
     margin: 0;
-    background-color: #7d4efdc7;
+    background-color: #6a34ff;
     text-align: center;
     flex-direction: column;
     padding: 50px;
@@ -427,6 +491,7 @@ footer a{
     .imagem-cont {
         height: 40px;
         width: 40px;
+        padding: 0;
     }
     .img-estudando {
         width: 40px;
@@ -438,7 +503,28 @@ footer a{
         height: 150px;
         margin: 0px ;
         padding: 20px;
-   
+    }
+    .img-estudando {
+        width: 50px;
+        height: 50px;
+        margin: 3px; 
+        padding: 5px;
+    }
+
+    .linha-imgs{
+        margin: 0;
+        padding: 0;
+    }
+    .titulo{
+        margin: 0;
+        padding: 20px;
+        position: center;
+        }
+
+    .container{
+        position: relative;
+        width: 100%;
+        height: 100%;
     }
 
     .nav-item {
@@ -450,21 +536,23 @@ footer a{
         display: flex;
         justify-content: space-between;
         align-items: center;
-
     }
 
     .menu {
-        padding: 30px;
+        padding: 0px;
+    }
+    .menu_logo{
+        display: inline-block;
     }
     .nav-lista {
-        padding: 30px;
-   
+        display: flex;
+        position: relative;
+        padding: 0px;
     }
 
-
     .div-conteudo {
+        width: 100%;
         padding: 50px;
-        
     }
 
     .quem-sou {
@@ -498,13 +586,11 @@ footer a{
         margin: 0%;
         text-align: center;
         padding: 0;
-    
     }
 
     .p {
         margin: 0;
         padding: 0;
-
     }
     .contato-container {
         padding: 30px;
@@ -520,6 +606,6 @@ footer a{
         margin: 12px;
     }
     .div-certificacoes {
-        padding: 20px;
+        padding: 0px;
     }
 }
