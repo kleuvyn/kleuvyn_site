@@ -180,8 +180,13 @@ h5{
     color: #25008a;
     font-size: 16px;
     margin: 20px;
-    transition: border-color 0.3s;
+    transition: border-color 1.5s;
 }
+.color-desenvolvimento{
+
+    transition: border-color 1.5s;
+}
+
 
 
 .div-back{
