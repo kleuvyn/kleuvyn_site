@@ -478,9 +478,9 @@ footer a{
     }
 
     .imagem-conteudo {
-        width: 250px;
-        height: 250px;
-        margin: 33px;
+        width: 170px;
+        height: 170px;
+        margin: 14px;
     }
     .imagem-cont {
         height: 40px;
@@ -490,6 +490,7 @@ footer a{
     .img-estudando {
         width: 40px;
         height: 40px;
+        margin: 0px;
     }
 
     .img-trabalho {
@@ -498,16 +499,37 @@ footer a{
         margin: 0px ;
         padding: 20px;
     }
-    .img-estudando {
-        width: 50px;
-        height: 50px;
-        margin: 3px; 
-        padding: 5px;
-    }
 
     .linha-imgs{
         margin: 0;
         padding: 0;
+        flex-direction: initial;
+    }
+    .imagem-certificados {
+        width: 250px;
+        height: 250px;
+        margin: 50px;
+    }
+    .imagem_projeto {
+        display: flex;
+        flex-direction: column;
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+        border-radius: 8px;
+        border: 2px solid #caa1ff;
+    }
+    .apresentacao_projetos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .apresentacao__conteudo__trabalho {
+        margin: 25px;
+        padding: 0px;
+        color: #3b005e;
+        justify-content: space-between;
+        align-items: center;
     }
     .titulo{
         margin: 0;
@@ -536,7 +558,9 @@ footer a{
         padding: 0px;
     }
     .menu_logo{
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     .nav-lista {
         display: flex;
@@ -558,9 +582,8 @@ footer a{
     .div-back,
     .div-python,
     .div-pdv {
-        padding:5px;
+        padding:0px;
         margin: 0;
-
     }
 
     .conteudo-quem-sou {
@@ -568,7 +591,16 @@ footer a{
         padding: 0;
         flex-direction: column;
     }
+    .conhecimentos {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .p-conhecimentos {
+        display: flex;
+        padding: 5px;
+        margin: 5px;
+    }
     .estudando-conteudo {
         margin: 0%;
         text-align: center;
@@ -592,14 +624,24 @@ footer a{
     }
 
     .trabalho-conteudo {
-        margin: 0;
-        padding: 4px 30px;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
     }
     .trabalho-letra {
         margin: 12px;
     }
     .div-certificacoes {
         padding: 0px;
+    }
+
+    .apresentacao-certificacoes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+
     }
 }
