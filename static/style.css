@@ -63,9 +63,12 @@ img {
 }
 
 .menu_logo{
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
+}
+.menu-aberto {
+    display: flex;
 }
 
 .menu_logo ul {
@@ -85,11 +88,6 @@ img {
     text-decoration: none;
     color: rgb(81, 0, 173);
 }
-
-.menu-fechado {
-    display: none;
-}
-
 
 .menu{
     box-shadow: none;
@@ -168,7 +166,7 @@ h5{
     
 .quem-sou{
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     flex-direction: column;
     justify-content: center;
@@ -296,14 +294,7 @@ ul {
     align-items: center;
     flex-direction: row;
 }
-.div-certificacoes{
-    display: flex;
-    background-color: #4400ff23;;
-    text-align: justify;
-    line-height: 1.5;
-    padding: 30px;
 
-}
 
 .div-certificacoes h2 h3 p{
     color: #000000;
@@ -513,9 +504,9 @@ footer a{
     .imagem_projeto {
         display: flex;
         flex-direction: column;
-        width: 80px;
-        height: 80px;
-        margin: 5px;
+        width: 300px;
+        height: 150px;
+        margin: 15px;
         border-radius: 8px;
         border: 2px solid #caa1ff;
     }
@@ -534,7 +525,7 @@ footer a{
     .titulo{
         margin: 0;
         padding: 20px;
-        position: center;
+        text-align: center;
         }
 
     .container{
@@ -554,13 +545,19 @@ footer a{
         align-items: center;
     }
 
+    #logo {
+        display: none;
+    }
     .menu {
         padding: 0px;
     }
     .menu_logo{
-        display: flex;
+        display: none;
         align-items: center;
-        flex-direction: column;
+        /* flex-direction: column; */
+    }
+    .menu-aberto {
+        display: flex;
     }
     .nav-lista {
         display: flex;
@@ -631,8 +628,13 @@ footer a{
     .trabalho-letra {
         margin: 12px;
     }
+
     .div-certificacoes {
-        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+       
     }
 
     .apresentacao-certificacoes {
@@ -643,5 +645,16 @@ footer a{
         padding: 0px;
         margin: 0px;
 
+    }
+
+    .mobile-menu-icon {
+        display: unset;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
     }
 }

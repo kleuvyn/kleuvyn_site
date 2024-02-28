@@ -1,11 +1,11 @@
 function menuShow() {
     let menuMobile = document.querySelector('.menu_logo');
-    if (menuMobile.classList.contains('menu-fechado')) {
-      menuMobile.classList.remove('menu-fechado');
-      document.querySelector('.icon').src="https://img.icons8.com/?size=256&id=quuyJoZCkYni&format=png";
+    if (menuMobile.classList.contains('menu-aberto')) {
+      menuMobile.classList.remove('menu-aberto');
+      document.querySelector('.icon').src="imagens/logo.png";
     } else {
-      menuMobile.classList.add('menu-fechado');
-      document.querySelector('.icon').src="https://img.icons8.com/?size=256&id=K7OXfoF0zHXw&format=pngg";
+      menuMobile.classList.add('menu-aberto');
+      document.querySelector('.icon').src="imagens/logo.png";
     }
   }
 
